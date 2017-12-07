@@ -1,0 +1,349 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 公用样式 */
+.bigContainer {
+	min-width: 1000px;
+}
+
+.container {
+	width: 990px;
+	margin: 0 auto;
+}
+
+/* 页头 */
+.header {
+	margin: 10px auto;
+}
+
+.logo {
+	display: inline-block;
+	width: 70px;
+	height: 60px;
+	
+}
+
+.headerText {
+	display: inline-block;
+	width: 110px;
+	height: 40px;
+	background-image: url(.././images/l-icon.png);
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	margin-left: 26px;
+}
+
+/* 登录内容区域 */
+.login01 {
+	background-color: #3399FF;
+	margin-bottom: 14px;
+}
+
+.login02 {
+	width: 990px;
+	height: 475px;
+	background:url(../images/b.png) 0px 0px no-repeat;
+}
+
+.login03 {
+	background-color: #fff;
+	width: 346px;
+	position: relative;
+	top: 40px;
+	left: 644px;
+	overflow: hidden;
+}
+
+/* 账户登录 */
+.loginType {
+	padding: 18px 0;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.loginType a {
+	font-size: 18px;
+	font-weight: 700;
+	color: #666;
+	line-height: 18px;
+	padding: 0 50px;
+	white-space: nowrap;
+	*padding: 0 48px;
+	*line-height: 22px;
+}
+
+.loginType a:hover {
+	color: #e4393c;
+}
+
+.loginType a.loginTypeActive {
+    margin-left:80px;
+	color: #e4393c;
+}
+
+.qrcodeImg {
+	width: 147px;
+	height: 147px;
+	border: 1px solid #f4f4f4;
+	padding: 8px;
+	margin-right: 10px;
+	margin-left: 22px;
+	position: relative;
+	left: 63px;
+	*margin-left: 0;
+}
+
+.scanImg {
+	width: 148px;
+	height: 168px;
+	visibility: hidden;
+}
+
+
+/* 自动登录提示 */
+.loginHint {
+	position: relative;
+	width: 346px;
+	height: 24px;
+	margin: 10px 0;
+	line-height: 24px\9;
+}
+
+.loginTips {
+	display: block;
+	width: 264px;
+	margin: 10px 20px;
+	font-size: 12px;
+	color: #666;
+	line-height: 18px;
+	height: 18px;
+	border: 1px solid #ffe57d;
+	position: relative;
+	padding: 2px 0 2px 40px;
+	background-color: #fff6d2;
+	position: absolute;
+	left: 0;
+	top: -10px;
+	z-index: 3;
+	visibility: hidden;
+}
+
+.loginTipsIcon {
+	display: inline-block;
+	width: 16px;
+	height: 17px;
+	background: url(.././images/pwd-icons-new.png) -104px -22px no-repeat;
+	position: absolute;
+	left: 10px;
+	top: 2px;
+}
+
+/* 登录错误提示 */
+.loginError {
+	display: block;
+	width: 264px;
+	margin: 10px 20px;
+	font-size: 12px;
+	color: #e4393c;
+	line-height: 18px;
+	height: 18px;
+	border: 1px solid #faccc6;
+	position: relative;
+	padding: 2px 0 2px 40px;
+	background-color: #ffebeb;
+	position: absolute;
+	left: 0;
+	top: -10px;
+	z-index: 1;
+	visibility: hidden;
+}
+
+.loginErrorIcon {
+	display: inline-block;
+	width: 16px;
+	height: 17px;
+	background: url(.././images/pwd-icons-new.png) -104px -49px no-repeat;
+	position: absolute;
+	left: 10px;
+	top: 2px;
+}
+
+/* 输入框:“用户名”、“密码” */
+.inputNameLine, .inputPasswordLine {
+	margin: 0 20px 20px;
+	width: 304px;
+	border: 1px solid #bdbdbd;
+}
+
+.inputNameIcon, .inputPasswordIcon {
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	border-right: 1px solid #bdbdbd;
+	background: url(.././images/pwd-icons-new.png) 0 0 no-repeat;
+}
+
+.inputPasswordIcon {
+	background-position: -48px 0;
+}
+
+.inputName, .inputPassword {
+	border: 0;
+	font-size: 14px;
+	color: #999;
+	line-height: 38px\9;
+	font-weight: normal;
+	padding-left: 10px;
+	width: 231px;
+	height: 38px;
+}
+
+/* 输入框:“用户名”、“密码”，获得焦点时显示蓝色边框 */
+.inputNameLineActive, .inputPasswordLineActive {
+	border-color: #3AA2E4;
+}
+
+.inputNameIconActive, .inputPasswordIconActive {
+	border-right-color: #3AA2E4;
+	background-position: 0 -48px;
+}
+
+.inputPasswordIconActive {
+	background-position: -48px -48px;
+}
+
+/* 输入框:“用户名”、“密码”，获得焦点并且有输入时显示清空按钮 */
+.inputTextDelete {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-top: 12px;
+	margin-left: 5px;
+	background: url(.././images/pwd-icons-new.png) -24px -143px no-repeat;
+	cursor: pointer;
+	visibility: hidden;
+}
+
+.inputTextDelete:hover {
+	background-position: -50px -143px;
+}
+
+/* 输入框:“用户名”、“密码”，登录错误时显示红色边框 */
+.inputNameLineError, .inputPasswordLineError {
+	border-color: #e4393c;
+}
+
+.inputNameIconError, .inputPasswordIconError {
+	border-right-color: #e4393c;
+	background-position: 0 -96px;
+}
+
+.inputPasswordIconError {
+	background-position: -48px -96px;
+}
+
+/* 登录按钮 */
+.loginLine {
+	width: 304px;
+	margin: 0 20px 32px;
+	height: 31px;
+    border: 1px solid #cb2a2d;
+}
+
+.loginBtn {
+	border: 1px solid #e85356;
+	width: 100%;
+	background-color: #e4393c;
+	height: 31px;
+	line-height: 31px;
+	color: #fff;
+	font-size: 20px;
+	*margin-left: -20px;
+	font-family: serif;
+}
+
+.loginBtn:hover {
+	cursor: pointer;
+}
+
+/* 注册 */
+.otherTypeLogin {
+	width: 306px;
+	border-top: 1px solid #F4F4F4;
+	background-color: #FCFCFC;
+	padding: 18px 20px;
+	position: relative;
+}
+
+.otherTypeLogin a, .loginColLine {
+	font-size: 12px;
+	line-height: 14px;
+	color: #666;
+	float: left;
+}
+
+.otherTypeLogin a:hover {
+	color: #e4393c;
+	text-decoration: underline;
+}
+
+.loginColLine {
+	height: 12px;
+	border-left: 1px solid #ccc;
+	margin: 0 10px;
+}
+
+a.register {
+	position: absolute;
+	top: 14px;
+	right: 20px;
+	font-size: 14px;
+	line-height: 16px;
+	display: inline-block;
+	padding-left: 21px;
+	height: 16px;
+}
+a.forpwd{
+	top: 14px;
+	right: 20px;
+	font-size: 14px;
+	line-height: 16px;
+	display: inline-block;
+	padding-left: 21px;
+	height: 16px;
+}
+
+/* 页脚 */
+.footer {
+	text-align: center;
+	font-size: 12px;
+	line-height: 12px;
+	color: #666;
+	margin-top: 14px;
+	padding-bottom: 32px;
+}
+
+.footerLine01 {
+	margin-bottom: 14px;
+}
+
+.footerLine01 a {
+	color: #666;
+}
+
+.footerLine01 a:hover {
+	color: #e4393c;
+	text-decoration: underline;
+}
+
+.footerColLine {
+	border-left: 1px solid #555;
+	margin: 0 13px;
+	line-height: 12px;
+	height: 12px;
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	*position: relative;
+	*top: 0px;
+	*width: 1px;
+}

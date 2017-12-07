@@ -1,0 +1,53 @@
+/*reset*/
+*{margin:0;
+  padding:0;
+}
+body{
+  font:12px/24px "宋体";
+  background: #fff;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+img{
+  vertical-align: bottom;
+}
+.clear::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.clear{
+  zoom:1;
+}
+/*end reset*/
+/*header*/
+#header{
+  width:100%;
+  background: #f5f5f5;
+  border-bottom: 1px solid #eeeeee;
+}
+#header_nav{
+  width:1190px;
+  height:35px;
+  margin:0 auto;
+}
+#header_nav_l,#header_nav_mobile{
+  float:left;
+  padding:0 6px;
+}
+#header_nav_l li,#header_nav_r li{
+  float:left;
+}
+#header_nav_l li{
+  padding-right:7px;
+}
+#header_nav_l a,#header_nav_mobile a{
+  display:block;
+  line-height: 36px;
+  color:#6c6c6c;
+}
+
